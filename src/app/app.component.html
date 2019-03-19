@@ -5,10 +5,11 @@
     <app-sidebar></app-sidebar>
   </div>
   <div class="col-lg-10">
-    <a href=""> <i class="far fa-bars" (click)="this.showHideSideBar = ! this.showHideSideBar"></i></a>
-   
-
-    <app-navbar></app-navbar>
+    <!-- <a href=""> <i class="far fa-bars" (click)="this.showHideSideBar = ! this.showHideSideBar"></i></a> -->
+     
+    <app-navbar 
+         [showHideSideBar]="showHideSideBar"
+         (showHideSideBarEvent)="onshowHideSideBarEventEvecked($event)"></app-navbar>
     <app-content></app-content>
   </div>
 </div>

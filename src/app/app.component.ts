@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  showHideSideBar: boolean = true;
-  
+  showHideSideBar: boolean = false;
+
+  onshowHideSideBarEventEvecked(showHideSideBar) {
+    this.showHideSideBar = showHideSideBar;
+
+  }
 }
